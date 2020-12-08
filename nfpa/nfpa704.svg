@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.0" width="404" height="404" xmlns="http://www.w3.org/2000/svg">
+
+ <!-- Background for the squares -->
+ <path d="M202,202 l100,100 l-100,100 l-100,-100 Z" fill="#fff"/>
+ <path d="M302,102 l100,100 l-100,100 l-100,-100 Z" fill="#ff7"/>
+ <path d="M202,2   l100,100 l-100,100 l-100,-100 Z" fill="#f33"/>
+ <path d="M102,102 l100,100 l-100,100 l-100,-100 Z" fill="#44f"/>
+
+ <!-- Grid -->
+ <path d="M102,102 l200,200 M302,102 l-200,200           M202,2 l200,200 l-200,200 l-200,-200 Z" stroke="#000" stroke-width="3" fill="none"/>
+
+ <!-- Text labels -->
+ <g font-family="Bitstream Vera Sans" font-size="110px" text-anchor="middle">
+  <text x="202" y="335" font-size="90px">W</text>
+  <text x="302" y="235">1</text>
+  <text x="202" y="135">2</text>
+  <text x="102" y="235">3</text>
+ </g>
+
+ <!-- Line through 'W' -->
+ <path d="M150,300 H254" stroke="#000" stroke-width="3"/>
+
+</svg>
