@@ -6,13 +6,14 @@ from subprocess import call
 
 
 parser = argparse.ArgumentParser()
+parser.add_argument('-n', '--name', default='default', type=str)
 parser.add_argument('-f', '--flammability', default=0, type=int)
 parser.add_argument('-hea', '--health', default=0, type=int)
 parser.add_argument('-ins', '--instability', default=0, type=int)
 parser.add_argument('-s', '--special', default='', type=str)
 args = parser.parse_args()
 
-cmd = 'pdflatex '
+cmd = 'pdflatex -jobname={} '.format(args.name)
 cmd += '"\\def\\flam{{{}}} '.format(args.flammability)
 cmd += '\\def\\health{{{}}} '.format(args.health)
 cmd += '\\def\\instab{{{}}} '.format(args.instability)
